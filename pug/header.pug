@@ -1,0 +1,53 @@
+header
+  .wrapper
+    .container-fluid
+      .row
+        .col-md-8.col-sm-7
+          .header__description
+            h1 Banner header
+            p.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud
+        .col-md-4.col-sm-5
+          .header_form
+            .header_form__wrapper
+              h2 Request form
+              form(method="POST" action="/" name="form" class="form-label form-css-label")
+                fieldset
+                  input(type='text' id="email" name='email' autocomplete="off")
+                  label(for="email") Enter your E-Mail
+                  span.reset &times;
+
+                fieldset
+                  input(type='text' id='name' name='name' autocomplete="off")
+                  label(for="name") Enter your name
+                  span.reset &times;
+
+                .select_wrap
+                  select(name="country")
+                    option(value="0") Select your country
+                    option(value="1") Russia
+                    option(value="2") USA
+                    option(value="3") UK
+                    option(value="4") Germany
+
+                .checkbox_block
+                  input(type='checkbox' name='agreement' id="checkbox")
+                  label(for="checkbox") I agree with Terms & Conditions
+
+                input(type="button" name="submit" class="btnForm" value='Submit')
+
+                a(class='header_form__hyperlink' href='#') Hyperlink
+
+
+
+
+
+
+
+
+
+
+
+
